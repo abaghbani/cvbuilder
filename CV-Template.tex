@@ -1,0 +1,194 @@
+\documentclass[10pt, a4paper]{article}
+
+\input{cv-themes/theme_selection.tex}
+
+%----------------------------------------------------------------------------------------
+%	 THEMES
+%----------------------------------------------------------------------------------------
+
+% beige, blue, bw, coral, earth, framed, gray, minimal, onyx, plain
+\theme{gray}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\name{Akbar Baghbani}
+\jobtitle{Digital Signal Processing Engineer \& Fpga Designer}
+\profilepic{akbar\_1.jpg}
+\aboutdesc{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.}
+\location{Petit-Lancy, Geneva}
+\phone{+41-78-232-8487}
+\mail{abaghbani@gmail.com}
+\dateofbirth{14 Jul 1976}
+\drivinglicenses{Category B}
+\linkedin{\href{https://www.linkedin.com/home}{linkedin.com/abaghbani}}
+\github{\href{https://github.com/abaghbani}{github.com/abaghbani}}
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+% Define professional skills (values are from interval [0,1])
+\proskills{
+    {Python, Matlab/0.9},
+    {Vhdl, Verilog/1.0},
+    {C,C++,C\#/0.7}}
+%\proskills{}
+
+% Define personal skills (values are from interval [0,1])
+\perskills{
+    {Communication skills/0.8},{Team Work/0.7},
+    {Hardworking/0.9}}
+%\perskills{}
+
+% Define language skills (values are from interval [0,5). 
+\langskills{{English/5},{Fench/3},{Farsi/5}}
+%\langskills{}
+
+\begin{document}
+
+\makeprofile
+
+\begincols
+
+%----------------------------------------------------------------------------------------
+%	 SIDEBAR
+%----------------------------------------------------------------------------------------
+% Use \subsection inside the sidebar
+
+\makecontact{CONTACT}
+
+\makedob{DATE OF BIRTH}
+
+\makeabout{ABOUT ME}
+
+\makelicense{DRIVING LICENSE}
+
+\subsection{LANGUAGES}
+\langcircles
+
+\subsection{PROFESSIONAL}
+\proskills
+
+\subsection{PERSONAL}
+\perskills
+
+%----------------------------------------------------------------------------------------
+%	 BODY
+%----------------------------------------------------------------------------------------
+% Use \section inside the body
+\switchcols % This command is used to switch to the document body
+
+\section{WORK EXPERIENCE}
+
+\begin{cvitem}{Senior DSP/FPGA engineer}{Ellisys SA}{Geneva/Switzerland}{2014-present}
+    I jointed to Ellisys SA in Switzerland,Geneva as senior hardware engineer.
+    \begin{itemize}
+        \item Bluetooth analyzer, design bluetooth low energy analyzer.
+        \item USB Type-C connector, design adapter for USB Explorer to support this feature.
+        \item Design a low cost and low power bluetooth explorer to support all speed of bluetooth and WiFi.
+    \end{itemize}
+\end{cvitem}
+
+\begin{cvitem}{Digital/FPGA engineer}{Hexosys {(as third party of Teledyn)}}{Kualalampur/Malaysia}{2007-2014}
+    I jointed to Ellisys SA in Switzerland,Geneva as senior hardware engineer.
+    \begin{itemize}
+        \item DDR3/4 Analyzer:
+        \begin{itemize}
+            \item DDR3 and DDR4 JEDEC analyzer for frequency range 400 to 1600MHz.
+            \item Designed trigger block on all protocol violations in 200MHz.
+            \item Using DDR3-Uniphy core and 4G SODIMM memory for capturing @460MHz.
+            \item Using Stratix4-GX-290 as main FPGA
+            \item Designed advanced timing constraint in IOE for tuning input sampling (IDDR)
+            \item My role is head of the logic design team, and responsible for all FPGA parts.
+        \end{itemize}
+        \item USB3.0 Analyzer and Exerciser:
+        \begin{itemize}
+            \item Supports all speeds (SS, HS, FS and LS).
+            \item Using Startix3-SL-150 as main FPGA, Virtex4-FX-20 as front-end.
+            \item Designed trigger block and sequencer @150MHz.
+            \item DDR2 ALTMEM core and 4G UDIMM memory for capturing @150MHz.
+            \item Designed all layers of USB3.0 with some setting ability as an exerciser.
+            \item Managed all logic design with a team and board design of this product.
+            \item Designed a low cost product with Stratix4-GX-180.
+            \item Designed engine for supporting UAS.
+            \item Worked with the gigabit transceiver of Stratix/Virtex.
+            \item Responsible for all logic bugs.
+            \item Created a testbench environment for the product, whole FPGA and all IO interfaces.
+        \end{itemize}
+        \item PCIe Gen2 analyzer:
+        \begin{itemize}
+            \item Protocol Test Card is a product for Compliance test the PCI Express 2.0 specification.
+            \item The PTC has been developed in close collaboration with Intel®, and is specifically designed to meet industry requirements for next generation development tools for PCI Express.
+            \item Using Vertix4 as the main FPGA and FX-2 as PC interface.
+            \item Designed PCIe G2 switch/Jammer.
+        \end{itemize}
+    \end{itemize}
+\end{cvitem}
+
+\begin{cvitem}{Digital Electronic engineer}{Maharan}{Tehran/Iran}{2001-2007}
+    I jointed to Ellisys SA in Switzerland,Geneva as senior hardware engineer.
+    \begin{itemize}
+        \item Mimic Panel:
+        \begin{itemize} 
+            \item Monitoring all information of railway on a large-scale panel,
+            \item Designed PLC controls 10,000 digital outputs.
+            \item responsible for all hardware design and embedded programming for this project.
+            \item Implemented, tested and verified this project on Tabas station.
+            \item Using Ethernet 100-T for interface between PLC units and RTU.
+            \item Using ModBus for interface between PLC units and IO modules.
+            \item CAN/Ethernet adaptor (used AT91SMA7X256)
+            \item Digital frequency meter (used TMS320C25 for calculating FFT)
+            \item Designed ADC board (20MSPS and Spartan-III XC3S400)
+            \item Full speed USB interface (used Philips D12 in full speed)
+        \end{itemize}
+        \item Digital UPS \(20KVA\):
+        \begin{itemize}
+            \item Online digital 30KVA UPS with float battery and automatic static switch.
+            \item Using Siemens-C166 microcontroller as a main control.
+            \item Responsible for all firmware and embedded programming.
+            \item Designed digital boards of project, Microcontroller based.
+            \item Using CAN bus for communication between units
+            \item Display panel with dot matrix LCD for monitoring all status.
+        \end{itemize}
+    \end{itemize}
+\end{cvitem}
+
+\section{EDUCATION}
+
+\begin{cvitem}{Masters degree}{Electrical and Electronics Engineering}{Sharif University of Technology}{1998-2000}
+    Thesis title was “Design, Manufacture and Control of a Flexible Transmission System”, Control Lab of Sharif University.
+\end{cvitem}
+
+\begin{cvitem}{Bachelor's degree}{Electrical and Electronics Engineering}{K.N.Toosi University of Technology}{1994-1998}
+    Thesis title was “Designing and manufacturing a Compressing System for the PCM line with hardware control”, implementing ADPCM.
+\end{cvitem}
+
+\section{LANGUAGES}
+
+\begin{langs}
+%   \langsitem{Language}{Native} % Optionally add \cline{2-3} after a row to insert a semi-line between languages
+    \langsitem{English}{Native} \cline{2-3}
+%   \langsitemmulti{Language}{Understanding level}{Speaking level}{Writing level}
+    \langsitemmulti{German}{B1}{B2}{B1}
+\end{langs}
+
+\cefrdesc % Use this to add CEFR description, otherwise delete or comment it out
+
+\section{PROJECTS}
+
+% \begin{projitem}{Project name}{\href{link}{link description}}
+% Project description
+% \end{projitem}
+
+\begin{projitem}{Project name}{\href{https://link}{project link}}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+\end{projitem}
+
+% Use \skillsbars to draw professional skill bars next to the personal skill bars
+% \skillsbars{NAME FOR PROFESSIONAL SKILLS SECTION}{NAME FOR PROFESSIONAL SKILLS SECTION}
+\skillsbars{PROFESSIONAL}{PERSONAL}
+
+\fincols
+\end{document}
