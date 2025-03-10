@@ -198,8 +198,8 @@
 
 % Environment for listing out work experience and education
 \newenvironment{cvitem}[4]{%
-    {\color{bodytext}{\ifthenelse{\isempty{#1}}{}{\sitemtit{#1,}}} \sitemtit{#2}}\\
-    {\sitemsub{#3 | #4}}\par
+    \textbf{\color{bodytext}{\ifthenelse{\isempty{#1}}{}{\sitemtit{#1,}}} \sitemtit{#2}}\\
+    {\sitemsub{#3 | #4}}\\
     {}
 }
 

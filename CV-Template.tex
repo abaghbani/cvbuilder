@@ -14,9 +14,11 @@
 %----------------------------------------------------------------------------------------
 
 \name{Akbar Baghbani}
-\jobtitle{Digital Signal Processing Engineer \& Fpga Designer}
+\jobtitle{DSP Engineer \\ Fpga Designer}
 \profilepic{akbar\_2.jpg}
-\aboutdesc{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.}
+\aboutdesc{Experienced Senior Engineer specializing in FPGA design, digital signal processing, and high-speed electronics. 
+Expert in wireless communication protocols, embedded systems, and gigabit serial interfaces.\\ 
+Passionate about designing cutting-edge hardware solutions and optimizing complex digital systems.\\}
 \location{Petit-Lancy, Geneva}
 \phone{+41-78-232-8487}
 \mail{abaghbani@gmail.com}
@@ -71,8 +73,8 @@
 \subsection{PROFESSIONAL}
 \proskills
 
-\subsection{PERSONAL}
-\perskills
+%\subsection{PERSONAL}
+%\perskills
 
 %----------------------------------------------------------------------------------------
 %	 BODY
@@ -80,91 +82,55 @@
 % Use \section inside the body
 \switchcols % This command is used to switch to the document body
 
+\section{Profile}
+I am a highly experienced \textbf{Digital Signal Processing (DSP) and FPGA Engineer} with a strong background in \textbf{wireless communication and 
+high-speed digital design.} My expertise spans the design, analysis, and development of advanced communication systems, specializing in \textbf{Bluetooth} and 
+other protocols such as \textbf{Wi-Fi and WPAN.}\\
+With extensive experience in \textbf{FPGA design and high-speed RTL coding}, I have worked on cutting-edge tecknology handling 5/10 Gbps data rates. 
+I am proficient in high-speed board design and have a deep understanding of gigabit serial protocols, including \textbf{PCIe, USB, HDMI/DP, and SAS/SATA}. 
+Additionally, I have significant expertise in memory interface technologies, including \textbf{DDR3/DDR4, AXI4, DFI, and Memory Controllers}.\\
+My passion lies in developing innovative hardware solutions and pushing the boundaries of digital communication technology. 
+I am always eager to tackle complex challenges and contribute to advancing high-speed digital systems.
+
+
+\section{Technical Skills}
+
+\begin{itemize}
+    \item \textbf{Digital Signal Processing (DSP)}: Modulation and demodulation for wireless protocols, DDS, up/down sampling, filter design, SDR, FPGA-based DSP implementation.
+    \item \textbf{HDL \& FPGA Design}: VHDL/Verilog programming, cross-clock domain handling, high-speed core clock design, simulation. 
+    \item \textbf{FPGA Platforms}: Xilinx \& Intel (Altera) FPGA expert, experience with high-speed digital design and transceiver tuning, timing analysis, chip planning, Gigabit transceiver IP cores, memory controller IP cores, Zynq platform.
+    \item \textbf{Board Design}: FPGA-based system design, high-speed ADC integration, schematic design in OrCAD, PCB design in Allegro.
+    \item \textbf{Embedded Programming}: C/C++ for embedded systems like Zynq, PowerPC, ARM (Kinetis, STM32), and NIOS-II.
+\end{itemize}
+
+\section{Projects}
+\begin{itemize}
+    \item \textbf{Bluetooth Analyzer}: Designed a specialized SDR for Bluetooth full-band (80MHz from 2400 to 2480 MHz), including filtering, DDS, and demodulation for all PHY layers. Developed packet detection and data extraction techniques.
+    \item \textbf{DDR3/DDR4 JEDEC Analyzer}: Developed an analyzer for 400 to 1600 MHz frequency range, implementing a trigger block for protocol violations and advanced IOE synchronization on Stratix FPGAs.
+    \item \textbf{USB 3.0 Analyzer \& Exerciser}: Designed a USB 3.0 protocol analyzer supporting all speeds (SS, HS, FS, LS), including a 150MHz trigger block and sequencer for precise event capture.
+    \item \textbf{PCIe Gen2 Test Card}: Developed a compliance test card for PCI Express 2.0 in collaboration with Intel, ensuring full compliance with industry standards and designing a PCIe switch/jammer for protocol testing.
+    \item \textbf{Railway Monitoring System}: Designed a large-scale railway monitoring panel, developing a custom PLC to control 10,000 digital outputs. 
+%Implemented ModBus communication for PLC-IO module interfacing and a CAN/Ethernet adaptor using AT91SMA7X256.
+    \item 30KVA Online UPS System: Designed and programmed an embedded controller for an online 30KVA UPS with automatic static switch and floating battery management. 
+%Developed rectifier and inverter control firmware using a Siemens-C166 microcontroller with CAN bus communication between units.
+\end{itemize}
 \section{WORK EXPERIENCE}
-
 \begin{cvitem}{Senior DSP/FPGA engineer}{Ellisys SA}{Geneva/Switzerland}{2014-present}
-    I jointed to Ellisys SA in Switzerland,Geneva as senior hardware engineer.
-    \begin{itemize}
-        \item Bluetooth analyzer, design bluetooth low energy analyzer.
-        \item USB Type-C connector, design adapter for USB Explorer to support this feature.
-        \item Design a low cost and low power bluetooth explorer to support all speed of bluetooth and WiFi.
-    \end{itemize}
+   Lead the study and design of Bluetooth modems, focusing on new advancements in Bluetooth and wireless technologies.
 \end{cvitem}
-
-\begin{cvitem}{Digital/FPGA engineer}{Hexosys {(as third party of Teledyn)}}{Kualalampur/Malaysia}{2007-2014}
-    I jointed to Ellisys SA in Switzerland,Geneva as senior hardware engineer.
-    \begin{itemize}
-        \item DDR3/4 Analyzer:
-        \begin{itemize}
-            \item DDR3 and DDR4 JEDEC analyzer for frequency range 400 to 1600MHz.
-            \item Designed trigger block on all protocol violations in 200MHz.
-            \item Using DDR3-Uniphy core and 4G SODIMM memory for capturing @460MHz.
-            \item Using Stratix4-GX-290 as main FPGA
-            \item Designed advanced timing constraint in IOE for tuning input sampling (IDDR)
-            \item My role is head of the logic design team, and responsible for all FPGA parts.
-        \end{itemize}
-        \item USB3.0 Analyzer and Exerciser:
-        \begin{itemize}
-            \item Supports all speeds (SS, HS, FS and LS).
-            \item Using Startix3-SL-150 as main FPGA, Virtex4-FX-20 as front-end.
-            \item Designed trigger block and sequencer @150MHz.
-            \item DDR2 ALTMEM core and 4G UDIMM memory for capturing @150MHz.
-            \item Designed all layers of USB3.0 with some setting ability as an exerciser.
-            \item Managed all logic design with a team and board design of this product.
-            \item Designed a low cost product with Stratix4-GX-180.
-            \item Designed engine for supporting UAS.
-            \item Worked with the gigabit transceiver of Stratix/Virtex.
-            \item Responsible for all logic bugs.
-            \item Created a testbench environment for the product, whole FPGA and all IO interfaces.
-        \end{itemize}
-        \item PCIe Gen2 analyzer:
-        \begin{itemize}
-            \item Protocol Test Card is a product for Compliance test the PCI Express 2.0 specification.
-            \item The PTC has been developed in close collaboration with Intel®, and is specifically designed to meet industry requirements for next generation development tools for PCI Express.
-            \item Using Vertix4 as the main FPGA and FX-2 as PC interface.
-            \item Designed PCIe G2 switch/Jammer.
-        \end{itemize}
-    \end{itemize}
+\begin{cvitem}{Digital/FPGA engineer}{Hexosys}{Kuala-lampur/Malaysia}{2007-2014}
+   Managed and led a team of FPGA engineers in developing DDR3/4 protocol analyzers and USB 3.0 analyzer/exerciser.
 \end{cvitem}
-
 \begin{cvitem}{Digital Electronic engineer}{Maharan}{Tehran/Iran}{2001-2007}
-    I jointed to Ellisys SA in Switzerland,Geneva as senior hardware engineer.
-    \begin{itemize}
-        \item Mimic Panel:
-        \begin{itemize} 
-            \item Monitoring all information of railway on a large-scale panel,
-            \item Designed PLC controls 10,000 digital outputs.
-            \item responsible for all hardware design and embedded programming for this project.
-            \item Implemented, tested and verified this project on Tabas station.
-            \item Using Ethernet 100-T for interface between PLC units and RTU.
-            \item Using ModBus for interface between PLC units and IO modules.
-            \item CAN/Ethernet adaptor (used AT91SMA7X256)
-            \item Digital frequency meter (used TMS320C25 for calculating FFT)
-            \item Designed ADC board (20MSPS and Spartan-III XC3S400)
-            \item Full speed USB interface (used Philips D12 in full speed)
-        \end{itemize}
-        \item Digital UPS \(20KVA\):
-        \begin{itemize}
-            \item Online digital 30KVA UPS with float battery and automatic static switch.
-            \item Using Siemens-C166 microcontroller as a main control.
-            \item Responsible for all firmware and embedded programming.
-            \item Designed digital boards of project, Microcontroller based.
-            \item Using CAN bus for communication between units
-            \item Display panel with dot matrix LCD for monitoring all status.
-        \end{itemize}
-    \end{itemize}
+   Hardware design and embedded programming for railway monitoring and control systems, including a large-scale Mimic Panel and UPS systems.
 \end{cvitem}
-
 \section{EDUCATION}
-
-\begin{cvitem}{Masters degree}{Electrical and Electronics Engineering}{Sharif University of Technology}{1998-2000}
-    Thesis title was “Design, Manufacture and Control of a Flexible Transmission System”, Control Lab of Sharif University.
+\begin{cvitem}{M.Sc. in }{Electrical and Electronics Engineering}{Sharif University of Technology}{1998-2000}
+    Thesis: \textit{Design and implementation a robust controller for a Flexible Transmission System}, Control Lab of Sharif University.
 \end{cvitem}
-
-\begin{cvitem}{Bachelor's degree}{Electrical and Electronics Engineering}{K.N.Toosi University of Technology}{1994-1998}
-    Thesis title was “Designing and manufacturing a Compressing System for the PCM line with hardware control”, implementing ADPCM.
+\begin{cvitem}{B.Sc. in }{Electrical and Electronics Engineering}{K.N.Toosi University of Technology}{1994-1998}
+    Thesis: \textit{Design and implementation a Compressing System for a PCM line}.
 \end{cvitem}
-
 %\section{LANGUAGES}
 
 %\begin{langs}
@@ -177,19 +143,18 @@
 %\cefrdesc % Use this to add CEFR description, otherwise delete or comment it out
 %
 
-\section{PROJECTS}
+%\section{PROJECTS}
 
 % \begin{projitem}{Project name}{\href{link}{link description}}
 % Project description
 % \end{projitem}
 
-\begin{projitem}{Project name}{\href{https://link}{project link}}
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-\end{projitem}
+%\begin{projitem}{Project name}{\href{https://link}{project link}}
+%    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+%\end{projitem}
 
 %% Use \skillsbars to draw professional skill bars next to the personal skill bars
 %% \skillsbars{NAME FOR PROFESSIONAL SKILLS SECTION}{NAME FOR PROFESSIONAL SKILLS SECTION}
 %\skillsbars{PROFESSIONAL}{PERSONAL}
-
 \fincols
 \end{document}
